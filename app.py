@@ -23,5 +23,9 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
+    return 'Hello World from lab 04! I have been seen {} times.\n'.format(count)
+
+@app.route('/announcement')
+def announcement():
     announcement = os.environ['ANNOUNCEMENT']
-    return 'Hello World from lab 04! '+ announcement +' I have been seen {} times.\n'.format(count)
+    return announcement
