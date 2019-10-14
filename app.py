@@ -24,4 +24,4 @@ def get_hit_count():
 def hello():
     count = get_hit_count()
     announcement = os.environ['ANNOUNCEMENT']
-    return 'Hello World from lab 04! {} '.format(announcement)+' I have been seen {} times.\n'.format(count)
+    return 'Hello World from lab 04! '+ announcement +' I have been seen {} times.\n'.format(count)
